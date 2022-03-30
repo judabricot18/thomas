@@ -1,0 +1,90 @@
+/* Flexbox : Parent qui dit ce qu'il faut faire aux enfants */
+
+
+* {
+    box-sizing:border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    width:500px;
+    height:500px;
+    background: red; /* donner une couleur de fond pour voir le resultat */
+    display: flex;
+    flex-direction: row;  /* par defaut */
+    justify-content: flex-start;  /* par defaut */ 
+    align-items: stretch /* par defaut */ 
+
+}
+
+p {
+    width:80px;
+    border: 1px solid black
+}
+
+
+.salut {
+    width:200px;
+    height:200px;
+    background:blue;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.masection {
+    background:green;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.un {
+    width: 30%;
+    padding:20px;
+    margin:20px;
+    background:red;
+}
+.deux {
+    /* width: 80%;  /* premiere solution */ 
+    /*  width:calc(80% - 80px);*/
+    flex:1;
+    background:blue
+}
+
+
+.trois  {
+    width: 30%;
+}
+
+.int {
+    padding:20px;
+    margin:20px;
+    background:red;
+}
+
+.quatre {
+    width: 70%;
+}
+
+
+.masection2 {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+article {
+    width:calc(25% - 40px);
+    background:blue;
+    margin:20px;
+    padding:20px;
+    box-sizing:border-box
+}
+
+img {
+    width:100%
+}
+
+
+
